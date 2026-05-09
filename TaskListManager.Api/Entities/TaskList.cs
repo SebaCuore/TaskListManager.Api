@@ -6,5 +6,13 @@
         public string Name { get; set; }
         public string? Description { get; set; } = null;
         public List<MyTask> Tasks { get; set; } = new List<MyTask>();
+
+
+        protected TaskList() { }
+        public TaskList(string name, string? description = null)
+        {
+            Name = name;
+            Description = description;
+        }
     }
 }
